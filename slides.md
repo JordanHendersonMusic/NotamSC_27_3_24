@@ -1,8 +1,14 @@
+
 Jordan Henderson,
 currently based in Glasgow UK,
 is a composer/artist/musician obsessed with how small groups of people interact and coexist while playing music together.
 They are attempting to make computer generated audiovisual beings that sit onstage and interact in a comparable way,
 watching and listening to other performers while responding through sound and communicating gesturally; this forms the topic of their ongoing PhD.
+
+
+Presentation website
+[https://jordanhendersonmusic.github.io/NotamSC_27_3_24/](https://jordanhendersonmusic.github.io/NotamSC_27_3_24/)
+
 
 ---
 
@@ -354,6 +360,8 @@ var n = JXNodder(
 <!-- .elements: class="fragment" data-fragment-index="2" -->
 
 ```supercollider
+
+n ++ otherMaps
 })
 ```
 <!-- .elements: class="fragment" data-fragment-index="3" -->
