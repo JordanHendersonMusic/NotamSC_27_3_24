@@ -30,15 +30,47 @@
     <script src="plugin/notes/notes.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/highlightjs-supercollider/supercollider.js"></script>
+
     <script>
     // More info about initialization & config:
     // - https://revealjs.com/initialization/
     // - https://revealjs.com/config/
+
     Reveal.initialize({
+      width: 1920,
+      height: 1024,
+      controls: true,
       hash: true,
+      progress: true,
+      autoAnimate: true,
+      autoAnimateEasing: 'ease',
+      autoAnimateDuration: 1.0,
+      autoAnimateUnmatched: true,
+      autoAnimateStyles: [
+        'opacity',
+        'color',
+        'background-color',
+        'padding',
+        'font-size',
+        'line-height',
+        'letter-spacing',
+        'border-width',
+        'border-color',
+        'border-radius',
+        'outline',
+        'outline-offset'
+      ],
+      highlight: {
+        beforeHighlight: hljs => hljs.registerLanguage("supercollider", hljsDefineSuperCollider)
+      },
 
       // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      plugins: [ 
+        RevealMarkdown,
+        RevealHighlight,
+        RevealNotes
+      ]
     });
     </script>
   </body>
